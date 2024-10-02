@@ -288,3 +288,16 @@ function establecerContenidoEspanol() {
     document.getElementById('titulo').textContent = 'Bienvenido';
     document.getElementById('contenido').textContent = 'Este es un ejemplo de página multilingüe.';
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const screenshotItem = document.querySelector('.screenshot-item');
+
+  screenshotItem.addEventListener('click', function() {
+    // Añadir la clase 'active' para iniciar la animación
+    this.classList.add('active');
+
+    // Eliminar la clase después de que la animación termine
+    setTimeout(() => {
+      this.classList.remove('active');
+    }, 500); // Tiempo de la animación en milisegundos
+  });
+});

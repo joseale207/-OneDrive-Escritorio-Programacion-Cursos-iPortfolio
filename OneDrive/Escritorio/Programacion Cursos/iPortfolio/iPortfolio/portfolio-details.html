@@ -35,112 +35,174 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 ======================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates Gallery</title>
+    
+    <!-- Incluye los archivos de estilo y script de Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 50px; /* Ancho del botón */
+            height: 50px; /* Altura del botón */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con un poco más de opacidad */
+            border-radius: 50%; /* Botones redondeados */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para un efecto más sofisticado */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+            z-index: 10; /* Asegúrate de que los botones estén por encima de otras capas */
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 24px; /* Tamaño del icono */
+            color: #f5c518; /* Color del icono */
+        }
+
+        .swiper-button-prev::after {
+            content: '◀'; /* Símbolo de flecha hacia la izquierda */
+        }
+
+        .swiper-button-next::after {
+            content: '▶'; /* Símbolo de flecha hacia la derecha */
+        }
+    </style>
 </head>
+
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/backinblack.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alejandro</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/tu_usuario" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://facebook.com/tu_usuario" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://instagram.com/tu_usuario" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://skype.com/tu_usuario" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://linkedin.com/in/tu_usuario" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="assets/img/backinblack.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Alejandro</a></h1>
+                <div class="social-links mt-3 text-center">
+                  <a href="https://x.com/joseale207" target="_blank" class="x"><i class="bi bi-x"></i></a> <!-- Twitter actualizado a X -->
+                  <a href="https://www.linkedin.com/in/josealejimenez/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/joseale207" target="_blank" class="github"><i class="bi bi-github"></i></a> <!-- Enlace de GitHub -->
+                </div>                
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Information</h3>
+            <nav id="navbar" class="nav-menu navbar">
               <ul>
-                <li><strong>Category</strong>: Legal Consultation & Real Estate</li>
-                <li><strong>Client</strong>: Various International Clients</li>
-                <li><strong>Project date</strong>: Various Dates</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+              
+                <li><a href="mailto:jose.alejandro.jimenez.h@gmail.com" class="nav-link scrollto"><i class="bx bx-mail-send"></i> <span>Email Me</span></a></li>
               </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About This Project</h2>
-              <p>
-                I am a legal advisor with extensive experience in corporate, real estate, and commercial law. Throughout my career, I have provided comprehensive legal support for businesses, managed real estate transactions, and advised on legal processes in both Venezuela and Spain. Additionally, I have leveraged CRM platforms and data analysis tools to improve operational efficiency and client services. My diverse background allows me to offer a tailored approach to solving complex legal issues.
-              </p>
-            </div>
-          </div>
-
+            </nav><!-- .nav-menu -->
+            
+            <style>
+            .nav-menu a {
+                transition: color 0.3s, transform 0.3s;
+            }
+            
+            .nav-menu a:hover {
+                color: #f5c518; /* Cambia el color al pasar el mouse */
+                transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+            }
+            </style>
+            
         </div>
+    </header><!-- End Header -->
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Certificates</h2>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Certificates</li>
+                    </ol>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs -->
 
+        <!-- ======= Certificates Gallery Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/certificados/Data_analitycs.png" alt="Certificate 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/certificados/Python_Analisis_page-0001.jpg" alt="Certificate 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/certificados/Full_stack_page-0001.jpg" alt="Certificate 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/certificados/QA_testing_page-0001.jpg" alt="Certificate 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/certificados/Titulo_Abogado_page-0001.jpg" alt="Certificate 5">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
 
-  </main><!-- End #main -->
+                            <!-- Botones de navegación -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Certificate Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Certifications & Titles</li>
+                                <li><strong>Issued by</strong>: Various Institutions</li>
+                                <li><strong>Date</strong>: Various Dates</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>About My Certifications</h2>
+                            <p>
+                                These certificates showcase my expertise in law, technology, and data analysis. They reflect my commitment to continuous learning and professional development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Certificates Gallery Section -->
+    </main><!-- End #main -->
+
+    <!-- Scripts al final del body -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializa el carrusel Swiper
+        const swiper = new Swiper('.portfolio-details-slider', {
+            loop: false, // Deshabilita el bucle
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Habilita la paginación clickeable
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Selector para el botón de avanzar
+                prevEl: '.swiper-button-prev', // Selector para el botón de retroceder
+            },
+        });
+    </script>
 </body>
+
+</html>
 
 
   </main><!-- End #main -->
